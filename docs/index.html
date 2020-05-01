@@ -53,7 +53,9 @@
     </h1>
 
     <script>
-        window.location.href = 'tel://5127616559';
+        if (window.navigator.standalone) {
+            window.location.href = 'tel://5127616559';
+        }
     </script>
 </body>
 
