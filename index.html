@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Call Wilbur</title>
+    <meta charset="utf8">
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon-precomposed.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-image: url(apple-touch-icon-precomposed.png);
+            background-size: cover;
+            background-position: 0 0;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            width: 100%;
+            color: white;
+            font-size: 5rem;
+            font-family: avenir;
+            font-weight: 800;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin: 0;
+            padding: 0 1rem;
+        }
+
+        a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Calling Wilbur<br>
+        ☎️<br>
+        512-761-6559
+    </h1>
+
+    <script>
+        window.location.href = 'tel://5127616559';
+    </script>
+</body>
+
+</html>
