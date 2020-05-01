@@ -16,43 +16,63 @@
         }
 
         body {
-            background-image: url(./apple-touch-icon.png);
-            background-size: cover;
-            background-position: 0 0;
             height: 100%;
             width: 100%;
             margin: 0;
             padding: 0;
+
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background-image: linear-gradient(65.5deg, rgba(23, 205, 205, 1) -15.1%, rgba(23, 25, 95, 1) 71.5%);
+            color: #fff;
         }
 
-        h1 {
-            width: 100%;
-            color: white;
-            font-size: 5rem;
-            font-family: avenir;
-            font-weight: 800;
+        div.ui {
             position: absolute;
             top: 50%;
             left: 50%;
-            /* bring your own prefixes */
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -60%);
+
+            width: 100%;
+        }
+
+        div.ui img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10%;
+            border: rgba(255, 255, 255, 0.25) solid 0.5rem;
+            width: 90%;
+        }
+
+        div.ui h1 {
+            font-size: 4rem;
+            font-weight: normal;
             text-align: center;
             margin: 0;
-            padding: 0 1rem;
+            padding: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        div.ui h1 span.name {
+            font-weight: 800;
+            font-size: 5rem;
+            color: #fff;
         }
 
         a {
-            color: #fff;
+            color: inherit;
         }
     </style>
 </head>
 
 <body>
-    <h1>
-        Calling Wilbur<br>
-        ☎️<br>
-        512-761-6559
-    </h1>
+    <div class="ui">
+        <img src="./apple-touch-icon.png">
+        <h1>
+            calling<br>
+            <span class="name">Wilbur</span><br>
+            <span class="number">512-761-6559</span>
+        </h1>
+    </div>
 
     <script>
         function dial() {
