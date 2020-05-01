@@ -54,8 +54,18 @@
     </h1>
 
     <script>
-        if (window.navigator.standalone) {
+        function dial() {
             window.location.href = 'tel://5127616559';
+        }
+        // dial when visibility changes
+        document.addEventListener("visibilitychange", function () {
+            if (document.visibilityState === 'visible') {
+                dial();
+            }
+        });
+        // dial on first page load
+        if (window.navigator.standalone) {
+            dial();
         }
     </script>
 </body>
